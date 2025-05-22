@@ -252,6 +252,7 @@ textarea,
 
 /* General App Styles */
 :root {
+<<<<<<< HEAD
   --primary-color: #fcd15a; /* New Gold/Amber */
   --secondary-accent-color: #2C3E50; /* New Deep Desaturated Blue */
   --text-on-primary: #1D1D1D; /* Dark text for on gold/amber backgrounds */
@@ -259,6 +260,12 @@ textarea,
   /* Gradients updated to solid colors or new accents */
   --primary-gradient: var(--primary-color); /* Solid gold/amber */
   --success-gradient: var(--secondary-accent-color); /* Solid deep desaturated blue */
+=======
+  --primary-color: #00A9FF; 
+  --secondary-accent-color: #FFB800; 
+  --primary-gradient: linear-gradient(to right, #00A9FF, #007acc); 
+  --success-gradient: linear-gradient(to right, #FFB800, #cc9300); 
+>>>>>>> main
 }
 
 [data-bs-theme="dark"] {
@@ -267,9 +274,15 @@ textarea,
   --bs-border-color: #0D121A; 
   --bs-card-bg: #1A2430; 
   --bs-hover-bg: #253342; 
+<<<<<<< HEAD
   
   --save-btn-bg-dark: var(--secondary-accent-color); /* Use new secondary for save button bg */
   --save-btn-text-dark: #FFFFFF; /* White text on dark blue save button */
+=======
+  /* --sidebar-bg-dark: linear-gradient(to bottom, #1A2430, #101821); /* Sidebar uses solid now */
+  --save-btn-bg-dark: var(--success-gradient); 
+  --save-btn-text-dark: #101821; 
+>>>>>>> main
   --save-btn-hover-shadow-dark: 0 4px 15px rgba(0, 0, 0, 0.4); 
   --themed-placeholder-color: rgba(225, 225, 225, 0.5); 
   
@@ -282,12 +295,19 @@ textarea,
   --delete-btn-color: #D32F2F; 
   --delete-btn-hover-bg: #b72b2b;
   --delete-btn-hover-color: #ffffff;
+<<<<<<< HEAD
 
   /* Flag colors updated */
   --flag-devotion-bg: var(--primary-color);
   --flag-devotion-text: var(--text-on-primary);
   --flag-faith-integration-bg: var(--secondary-accent-color);
   --flag-faith-integration-text: #FFFFFF; 
+=======
+  --flag-devotion-bg: var(--primary-color);
+  --flag-devotion-text: #ffffff;
+  --flag-faith-integration-bg: var(--secondary-accent-color);
+  --flag-faith-integration-text: #101821; 
+>>>>>>> main
 }
 
 /* Styling for .sidebar-toggle-btn-main (hamburger icon in main content) */
@@ -356,8 +376,13 @@ textarea,
 .form-control:focus {
   background-color: var(--bs-card-bg); 
   color: var(--bs-body-color); 
+<<<<<<< HEAD
   border-color: var(--primary-color); /* Gold focus */
   box-shadow: 0 0 0 0.25rem rgba(252, 209, 90, 0.25); /* Gold shadow */
+=======
+  border-color: var(--primary-color); 
+  box-shadow: 0 0 0 0.25rem rgba(0, 169, 255, 0.25); 
+>>>>>>> main
 }
 .form-control::placeholder {
   color: var(--themed-placeholder-color); 
@@ -378,9 +403,12 @@ textarea,
 .btn { /* General transition for all buttons */
   transition: transform 0.2s ease, background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
+<<<<<<< HEAD
 .btn:active {
   transform: translateY(1px) scale(0.98);
 }
+=======
+>>>>>>> main
 .btn-gradient, .btn-gradient-success { /* Base for main action buttons */
   border: none;
   padding: 0.6rem 1.2rem;
@@ -389,9 +417,12 @@ textarea,
   letter-spacing: 0.5px;
   border-radius: 4px; 
 }
+<<<<<<< HEAD
 /* Specific .btn-gradient (Generate button) styles are in GeneratorForm.vue using these variables */
 /* Specific .btn-gradient-success (Save button) styles are in ContentDisplayWrapper.vue using these variables */
 
+=======
+>>>>>>> main
 .btn-gradient:disabled, .btn-gradient-success:disabled { /* Disabled states for main action buttons */
   opacity: 0.65;
   cursor: not-allowed;
