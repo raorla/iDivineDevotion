@@ -4,6 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css' // Keep this for base styles, or r
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 // import './style.css' // Ensure this is imported if it contains global styles
 
+// Set dark theme as default
+document.documentElement.setAttribute('data-bs-theme', 'dark');
+
 const app = createApp(App)
 
 app.mount('#app')
