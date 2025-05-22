@@ -104,6 +104,3 @@ This project is currently not licensed. You are free to use, modify, and distrib
 
 ---
 
-We hope Divine Devotion brings you moments of peace, spiritual insight, and useful ideas for faith integration.
-If you encounter any issues or have feedback, please open an issue on GitHub.
-Last Updated: May 22, 2025
