@@ -200,7 +200,7 @@ const submitForm = () => {
 .btn-gradient {
   background-color: var(--primary-color);
   background-image: none;
-  color: white;
+  color: var(--text-on-primary); /* Updated text color */
   border: none;
   padding: 0.6rem 1.2rem; 
   font-weight: 500; 
@@ -215,7 +215,7 @@ const submitForm = () => {
   transform: translateY(-2px);
 }
 .btn-gradient i {
-  color: white;
+  color: var(--text-on-primary); /* Updated icon color */
 }
 .btn-gradient:disabled { 
   opacity: 0.65;
