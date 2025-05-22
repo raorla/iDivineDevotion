@@ -20,10 +20,18 @@
         </div>
       </div>
       
+<<<<<<< HEAD
+      <Transition name="content-fade-slide" mode="out-in">
+        <div v-if="props.currentContent && props.currentContent.text && !props.generationError" class="actual-content-area">
+          <div v-if="props.currentContent.type === 'devotion' && props.currentContent.verses && props.currentContent.verses.length > 0" class="first-verse-highlight">
+            <span class="verse-reference-bold">{{ props.currentContent.verses[0] }}</span>
+            <blockquote v-if="props.firstVerseText" class="verse-text-blockquote">
+=======
       <div v-else-if="props.currentContent && props.currentContent.text && !props.generationError">
         <div v-if="props.currentContent.type === 'devotion' && props.currentContent.verses && props.currentContent.verses.length > 0" class="first-verse-highlight">
           <span class="verse-reference-bold">{{ props.currentContent.verses[0] }}</span>
           <blockquote v-if="props.firstVerseText" class="verse-text-blockquote">
+>>>>>>> main
             “{{ props.firstVerseText }}”
           </blockquote>
         </div>
@@ -36,7 +44,12 @@
             <i class="bi bi-share-fill me-2"></i>Share
           </button>
         </div>
+<<<<<<< HEAD
+        </div>
+      </Transition>
+=======
       </div>
+>>>>>>> main
     </div>
   </div>
   
@@ -162,7 +175,11 @@ const emitShare = () => {
   background-color: transparent;
 }
 .btn-outline-info:hover {
+<<<<<<< HEAD
+  color: var(--text-on-primary); /* Updated hover text color */
+=======
   color: white; 
+>>>>>>> main
   background-color: var(--primary-color); 
   border-color: var(--primary-color); 
 }
@@ -170,7 +187,11 @@ const emitShare = () => {
   color: var(--primary-color);
 }
 .btn-outline-info:hover i {
+<<<<<<< HEAD
+  color: var(--text-on-primary); /* Updated hover icon color */
+=======
   color: white;
+>>>>>>> main
 }
 
 /* Placeholder section styling */
@@ -206,7 +227,35 @@ const emitShare = () => {
   font-family: 'Roboto', sans-serif;
 }
 
+<<<<<<< HEAD
+@keyframes pulse-placeholder {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+.placeholder-glow .placeholder { /* Target placeholders within placeholder-glow */
+  animation: pulse-placeholder 2s infinite ease-in-out;
+}
+
+
 /* :deep styles for DevotionDisplay */
+.actual-content-area { /* Class for the div inside transition */
+  /* Add any specific layout styling for this container if needed */
+}
+
+.content-fade-slide-enter-active,
+.content-fade-slide-leave-active {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.content-fade-slide-enter-from,
+.content-fade-slide-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+=======
+/* :deep styles for DevotionDisplay */
+>>>>>>> main
 :deep(.devotion-display-content .main-devotion-text) { 
   color: var(--bs-body-color) !important; 
 }
