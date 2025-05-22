@@ -10,8 +10,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png'], // Add your static assets here
       manifest: {
-        name: 'IexecDivineDevotion',
-        short_name: 'IexecDivineDevotion',
+        name: 'Divine Devotion',
+        short_name: 'DivineDevotion',
         description: 'An AI-powered spiritual companion for generating and saving devotionals.',
         theme_color: '#1a1a2e', // Corresponds to your dark mode body background
         background_color: '#ffffff', // A default background color
